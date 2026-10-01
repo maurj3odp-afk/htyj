@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Treasure Island – خوێندنەوەی ئەپیسۆدەکان</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div>
+<div class="credit">دروستکراوە لەلایەن: م.زانا حیدەر صالح</div>
+<header class="top">
+  <div class="brand"><span class="mark">⚓</span><b>Treasure Island</b></div>
+  <nav id="eps" aria-label="ئەپیسۆدەکان"></nav>
+  <div class="tools">
+    <button id="fMinus" title="نووسین بچووک بکەرەوە">A-</button>
+    <button id="fPlus" title="نووسین گەورە بکە">A+</button>
+    <button id="theme" title="تاریک / ڕووناک">◐</button>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="kicker">Robert Louis Stevenson</p>
+  <h1 lang="en" dir="ltr">Treasure Island</h1>
+  <p class="lead">ئەپیسۆدی ١ تا ٨ — کلیک لە هەر رستەیەک بکە بۆ گوێگرتن، وەرگێڕان و مەشقی تاقیکردنەوە.</p>
+</section>
+
+<main id="book" lang="en" dir="ltr"></main>
+
+<aside id="panel" hidden dir="rtl" aria-live="polite">
+  <div class="grip"></div>
+  <div class="row head">
+    <span id="pos"></span>
+    <div>
+      <button id="prev" title="پێشوو">‹</button>
+      <button id="next" title="دواتر">›</button>
+      <button id="close" title="داخستن">✕</button>
+    </div>
+  </div>
+  <p id="sent" lang="en" dir="ltr"></p>
+  <div class="tabs">
+    <button data-m="listen" class="on">🔊 بیخوێنەرەوە بە ئینگلیزی</button>
+    <button data-m="ku">کوردی سۆرانی</button>
+    <button data-m="exam">لەوانەیە لە تاقیکردنەوە بێتەوە</button>
+  </div>
+  <div id="out"></div>
+</aside>
+<script src="script.js"></script>
+</body>
+</html>
